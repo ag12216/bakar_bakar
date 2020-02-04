@@ -6,19 +6,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import butterknife.ButterKnife
+import butterknife.Unbinder
 
 /**
  * A simple [Fragment] subclass.
  */
-class frag_screen1 : Fragment() {
+class frag_abouUs : Fragment() {
+
+    private var unbinder: Unbinder? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.frag_screen1, container, false)
+        val view = inflater.inflate(R.layout.frag_abou_us, container, false)
+        unbinder = ButterKnife.bind(this,view)
+        return view
     }
 
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unbinder?.unbind()
+    }
 
 }

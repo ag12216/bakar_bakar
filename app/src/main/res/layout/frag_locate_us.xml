@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_locateUs"
+    android:background="@drawable/container_background">
+
+    <ImageView
+        android:id="@+id/idLogo"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_locateus"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Address"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@color/colorSilver"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="City"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@color/colorSilver"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Province"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@color/colorSilver"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Portal Zip"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@color/colorSilver"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Country"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@color/colorSilver"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
