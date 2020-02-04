@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/container_background"
+    tools:context=".HomeScreen">
+
+  <include
+      android:id="@+id/idheaderView"
+      layout="@layout/header_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/idHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subcategory"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+   <FrameLayout
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/idheaderView"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="50dp"/>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/idBottomNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    app:menu="@menu/bottom_navigation"
+    app:itemBackground="@color/transparent"
+    app:labelVisibilityMode="labeled"
+    android:paddingTop="15dp"
+    android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

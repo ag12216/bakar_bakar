@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.OtpVerificationScreen"
+    android:background="@drawable/ic_background">
+
+    <ImageView
+        android:id="@+id/idOtpLogo"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_otpmobile"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/idVerification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idOtpLogo"
+        android:text="Verification"
+        android:textSize="34sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/idMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idVerification"
+        android:layout_marginTop="10dp"
+        android:text="@string/otpMsg"
+        android:textAlignment="center"
+        android:textColor="@color/colorSilver"
+        android:textSize="14sp"/>
+
+    <com.libizo.CustomEditText
+        android:id="@+id/idEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/idMsg"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your Email"
+        android:textStyle="italic"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        app:libIZO_setBorderColor="@color/colorSilver"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setCornerRadius="4dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/idGetOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/idEmailEditText"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/corner_radius"
+        android:backgroundTint="@color/colorGreen"
+        android:elevation="10dp"
+        android:text="GET OTP"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/idResendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idGetOtpButton"
+        android:layout_marginTop="20dp"
+        android:text="Didn't receive the verification OTP? Resend again"
+        android:textAlignment="center"
+        android:textColor="@color/colorSilver"
+        android:textStyle="italic"
+        android:visibility="gone"/>
+
+</RelativeLayout>

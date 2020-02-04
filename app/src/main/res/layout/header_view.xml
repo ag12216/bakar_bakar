@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/idProfileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/app_logo"
+        android:background="@drawable/circle"/>
+
+    <TextView
+        android:id="@+id/idName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/idProfileImage"
+        android:text="MR. Bean"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/idProfileImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit profile"
+        android:layout_below="@+id/idName"
+        android:layout_alignLeft="@+id/idName"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"/>
+
+    <ImageButton
+        android:id="@+id/idHambergur"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_hambergur"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/idProfileImage"
+        android:layout_alignBottom="@+id/idProfileImage"
+        android:layout_marginRight="30dp"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>

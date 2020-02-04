@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/idHome"
+        android:icon="@drawable/menu_home"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/idWifi"
+        android:icon="@drawable/menu_wifi"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/idGallery"
+        android:icon="@drawable/menu_gallery"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/idMusic"
+        android:icon="@drawable/menu_music"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/idNotes"
+        android:icon="@drawable/menu_notes"
+        tools:ignore="MenuTitle" />
+</menu>
