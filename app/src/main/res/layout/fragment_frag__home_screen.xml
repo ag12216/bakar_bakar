@@ -57,6 +57,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/idTLSeeall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
@@ -98,6 +99,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/idFA"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"

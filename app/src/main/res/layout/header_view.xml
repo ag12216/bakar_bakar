@@ -9,19 +9,25 @@
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/app_logo"
-        android:background="@drawable/circle"/>
+        android:src="@drawable/right_bean"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/idProfileImage"
+    android:layout_alignBottom="@+id/idProfileImage"
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:layout_toRightOf="@+id/idProfileImage">
 
     <TextView
         android:id="@+id/idName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/idProfileImage"
         android:text="MR. Bean"
         android:textColor="@color/colorWhite"
-        android:textSize="24sp"
-        android:layout_alignTop="@+id/idProfileImage"/>
+        android:textSize="24sp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +37,10 @@
         android:textColor="@color/colorWhite"
         android:layout_marginTop="5dp"
         android:textSize="12sp"/>
+
+</RelativeLayout>
+
+
 
     <ImageButton
         android:id="@+id/idHambergur"

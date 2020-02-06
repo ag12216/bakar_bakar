@@ -30,6 +30,12 @@ class frag_contactUs : Fragment() {
         return view
     }
 
+
+    override fun onResume() {
+        super.onResume()
+        delegate.updateTitle("contactus")
+    }
+
     @OnClick(R.id.idSubmitButton)
     internal fun didTapSubmitButton(){
         delegate.backToPage("contact")
@@ -42,6 +48,16 @@ class frag_contactUs : Fragment() {
 
     @OnClick(R.id.idGoogle)
     internal fun didTapGoogleButton(){
+        delegate.backToPage("review")
+    }
+
+    @OnClick(R.id.idInstagram)
+    internal fun didTapInstaButton(){
+        delegate.backToPage("contact")
+    }
+
+    @OnClick(R.id.idTwitter)
+    internal fun didTapTwitterButton(){
         delegate.backToPage("review")
     }
 

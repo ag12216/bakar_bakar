@@ -16,6 +16,8 @@ class frag_abouUs : Fragment() {
 
     private var unbinder: Unbinder? = null
 
+    lateinit var delegate: backToPage
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,6 +26,12 @@ class frag_abouUs : Fragment() {
         val view = inflater.inflate(R.layout.frag_abou_us, container, false)
         unbinder = ButterKnife.bind(this,view)
         return view
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+        delegate.updateTitle("aboutus")
     }
 
 

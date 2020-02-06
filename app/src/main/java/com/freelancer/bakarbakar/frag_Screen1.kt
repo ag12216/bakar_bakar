@@ -8,9 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.GridView
 import android.widget.ImageView
-import butterknife.BindView
-import butterknife.ButterKnife
-import butterknife.Unbinder
+import butterknife.*
 import com.freelancer.bakarbakar.Adapters.screen1_adapter
 
 /**
@@ -35,11 +33,14 @@ class frag_Screen1 : Fragment(),View.OnClickListener {
 
         val adapter = screen1_adapter(activity!!)
         gridList.adapter = adapter
-
         imageGesture.setOnClickListener(this)
         return view
     }
 
+    @OnItemClick(R.id.idGridList)
+    internal fun didTapGrid(){
+        delegate.backToPage("music")
+    }
 
     override fun onDestroy() {
         super.onDestroy()

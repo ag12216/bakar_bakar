@@ -1,49 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/idImageIcon"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/ic_launcher" />
+            android:id="@+id/idImageHolder"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_cell_fa"/>
 
-        <TextView
-            android:id="@+id/idName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/idImageIcon"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/idImageIcon"
-            android:text="Lorem Ipsum"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+<!--        <ImageView-->
+<!--            android:id="@+id/idImageIcon"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:src="@drawable/ic_launcher" />-->
 
-        <TextView
-            android:id="@+id/idSubName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/idName"
-            android:layout_alignLeft="@+id/idName"
-            android:layout_marginTop="4dp"
-            android:layout_toRightOf="@+id/idImageIcon"
-            android:text="Hip Hop"
-            android:textSize="16sp" />
+<!--        <TextView-->
+<!--            android:id="@+id/idName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignTop="@+id/idImageIcon"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@+id/idImageIcon"-->
+<!--            android:text="Lorem Ipsum"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="20sp" />-->
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_below="@+id/idSubName"
-            android:layout_alignLeft="@+id/idSubName"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/idImageIcon"
-            android:src="@drawable/ic_ratings" />
+<!--        <TextView-->
+<!--            android:id="@+id/idSubName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/idName"-->
+<!--            android:layout_alignLeft="@+id/idName"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_toRightOf="@+id/idImageIcon"-->
+<!--            android:text="Hip Hop"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_below="@+id/idSubName"-->
+<!--            android:layout_alignLeft="@+id/idSubName"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_toRightOf="@+id/idImageIcon"-->
+<!--            android:src="@drawable/ic_ratings" />-->
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

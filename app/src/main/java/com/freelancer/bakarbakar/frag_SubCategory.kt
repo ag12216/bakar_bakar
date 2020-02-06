@@ -21,6 +21,7 @@ class frag_SubCategory : Fragment() {
     @BindView(R.id.idGridList) lateinit var gridList: GridView
 
     private var unbinder: Unbinder? = null
+    lateinit var delegate: backToPage
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,10 +31,26 @@ class frag_SubCategory : Fragment() {
         val view = inflater.inflate(R.layout.frag__sub_category, container, false)
         unbinder = ButterKnife.bind(this,view)
 
-        val adapter = subCategoryAdapter(activity!!)
+        val imageList: ArrayList<Int> = ArrayList()
+
+        for (i in 1..4){
+            imageList.add(R.drawable.mic_image)
+            imageList.add(R.drawable.cloud_image)
+            imageList.add(R.drawable.mic_holder)
+            imageList.add(R.drawable.play_pause)
+            imageList.add(R.drawable.download_image)
+            imageList.add(R.drawable.copy_image)
+        }
+
+        val adapter = subCategoryAdapter(activity!!,imageList)
         gridList.adapter = adapter
 
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+        delegate.updateTitle("subcategory")
     }
 
 

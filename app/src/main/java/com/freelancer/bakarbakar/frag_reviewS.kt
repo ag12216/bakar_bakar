@@ -15,6 +15,7 @@ import butterknife.Unbinder
 class frag_reviewS : Fragment() {
 
     private var unbinder: Unbinder? = null
+    lateinit var delegate: backToPage
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,6 +25,11 @@ class frag_reviewS : Fragment() {
         val view = inflater.inflate(R.layout._frag_review_s, container, false)
         unbinder = ButterKnife.bind(this,view)
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+        delegate.updateTitle("review")
     }
 
     override fun onDestroy() {

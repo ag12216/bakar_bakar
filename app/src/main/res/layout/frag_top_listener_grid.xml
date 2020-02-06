@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_container_background_color"
+    tools:context=".Login.frag_top_listenerGrid">
+
+    <TextView
+        android:id="@+id/idHeadTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Listeners"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="28sp"/>
+
+    <GridView
+        android:id="@+id/idGridList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idHeadTextView"
+        android:numColumns="4"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"/>
+
+</RelativeLayout>

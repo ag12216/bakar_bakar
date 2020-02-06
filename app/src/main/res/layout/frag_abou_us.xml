@@ -6,71 +6,55 @@
     android:background="@drawable/ic_container_background_color"
     tools:context=".frag_abouUs">
 
-    <ScrollView
+
+    <ImageView
+        android:id="@+id/idLogo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/right_bean_big" />
 
-        <RelativeLayout
+    <TextView
+        android:id="@+id/idlogoLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idLogo"
+        android:layout_marginTop="5dp"
+        android:text="Mr Bean"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/idDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idlogoLabel"
+        android:layout_marginTop="5dp"
+        android:text="DDDS, Diploma in Graphic Design ( UD)\n Songoals, 43 years of Experience"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/idDesc"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_round_view">
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/skeleton_cell" />
 
-            <ImageView
-                android:id="@+id/idLogo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/app_logo" />
+    </RelativeLayout>
 
-            <TextView
-                android:id="@+id/idlogoLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/idLogo"
-                android:layout_marginTop="10dp"
-                android:text="Mr Bean"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="30sp"
-                android:textStyle="normal" />
 
-            <TextView
-                android:id="@+id/idDesc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/idlogoLabel"
-                android:layout_marginTop="10dp"
-                android:text="This is place to description header.This is place to description header."
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"
-                android:textStyle="normal" />
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/idDesc"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/layout_round_view"
-                android:gravity="center">
-
-                <TextView
-                    android:id="@+id/idDetails"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/idLogo"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/tempPlaceholder"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-            </LinearLayout>
-        </RelativeLayout>
-    </ScrollView>
 </RelativeLayout>

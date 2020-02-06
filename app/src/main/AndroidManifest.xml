@@ -9,10 +9,12 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeScreen"></activity>
+        <activity android:name=".featureCollection_List"></activity>
+        <activity android:name=".HomeScreen" />
         <activity android:name=".Login.OtpVerificationScreen" />
         <activity android:name=".Login.SignUpScreen" />
         <activity android:name=".Login.LoginScreen" />
+        <activity android:name=".Login.frag_top_listenerGrid" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -16,6 +16,7 @@ class frag_locateUs : Fragment() {
 
 
     private var unbinder: Unbinder? = null
+    lateinit var delegate: backToPage
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,6 +28,10 @@ class frag_locateUs : Fragment() {
         return view
     }
 
+    override fun onResume() {
+        super.onResume()
+        delegate.updateTitle("locateus")
+    }
 
     override fun onDestroy() {
         super.onDestroy()
